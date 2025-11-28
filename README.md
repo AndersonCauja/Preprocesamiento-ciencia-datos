@@ -10,6 +10,7 @@ codificación de variables categóricas y eliminación de duplicados.
 
 ## Estructura del Proyecto
 Preprocesamiento-ciencia-datos/
+
 ── data/                    # Para datasets
 
 ── scr/                     # Para código Python
