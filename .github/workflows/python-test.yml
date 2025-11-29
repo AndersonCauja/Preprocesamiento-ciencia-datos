@@ -1,0 +1,24 @@
+name: Prueba Python
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Instalar Python y dependencias
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Instalar pandas y sklearn
+      run: |
+        pip install pandas scikit-learn numpy
+    
+    - name: Probar que el script funciona
+      run: |
+        python scr/preprocesamiento.py
+        
