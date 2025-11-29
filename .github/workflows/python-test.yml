@@ -20,5 +20,5 @@ jobs:
     
     - name: Probar que el script funciona
       run: |
-        python scripts/preprocesamiento.py
+        python scr/preprocesamiento.py
         
